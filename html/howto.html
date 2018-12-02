@@ -11,19 +11,22 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-		<script type="text/javascript">
-			window.onscroll = function() {scrollFunction()};
-
-			function scrollFunction() {
-				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-					document.getElementById("navba").style.top = "0";
-				} else {
-					document.getElementById("navba").style.top = "80px";}}
-		</script>
-
 	</head>
 
 		<body>
+			<script type="text/javascript">
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+    		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+       			document.getElementById("myBtn").style.display = "block";
+    		} else {
+        		document.getElementById("myBtn").style.display = "none";}}
+        	function topFunction() {
+		    document.body.scrollTop = 0;
+		    document.documentElement.scrollTop = 0;}
+			</script>
+			<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGfFuPVFQZ1re73wz3Jbo3IEYqklpo7677ZPU6fKVl0ggYjMC1Og" style="width:2em;height:2em"></button>
 			<div class="top">	
 				<div class="howtotext">
 					<h1>
@@ -49,19 +52,27 @@
 				</div>
 			</div>
 
+			<script type="text/javascript">
+			window.onscroll = function() {scrollFunction()};
 
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("navba").style.top = "-30px";
+				} else {
+					document.getElementById("navba").style.top = "80px";}}
+			</script>
 			<div id="navba">
-				<ul>
-					<li><a class="Home" href="../index.html">Home</a></li>
-					<li><a class="What" href="what.html">What is Skt.a ?</a></li>
-					<li><a class="How_to" href="howto.html">How to choose a smartphone ?</a></li>
-					<li><a class="About me" href="me.html">About me</a></li>
-					<li><a class="Feedback" href="feedback.html">Feedback</a></li>
-				</ul>
+			<ul>
+		 		<li><a class="Home" href="../index.html">Home</a></li>
+				<li><a class="What" href="what.html">What is Skt.a ?</a></li>
+		  		<li><a class="How_to" href="howto.html">How to choose a smartphone ?</a></li>
+		  		<li><a class="About me" href="me.html">About me</a></li>
+		  		<li><a class="Feedback" href="feedback.html">Feedback</a></li>
+			</ul>
 			</div>
 
-			<div class="middle1" id="middlenav">
-				<a id="OS" href="#howtotitle1">OS</a></li>
+			<div id="middlenav">
+				<a id="OS" href="#howtotitle1" >OS</a></li>
 				<a id="Price" href="#howtotitle2">Price</a></li>
 				<a id="Need" href="#howtotitle3">Need</a></li>
 				<a id="Network" href="#howtotitle4">Network</a></li>
@@ -70,10 +81,14 @@
 				<a id="Camera" href="#howtotitle7">Camera</a></li>
 				<a id="Battery" href="#howtotitle8">Baterry</a></li>
 			</div>
+			<div id="howtotitle1"></div>
 			<div class="howtodroite">
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle1">
+					<div class="howtotitle">
 						1.Picking an Operating System
+					</div>
+					<div class="howtoimage">
+						<img src="https://img.phonandroid.com/2014/07/Android-iOS-Windows-Phone.jpg"><br>
 					</div>
 					<p>
 						Learn some basic differences between operating systems.<br>
@@ -83,9 +98,13 @@
 						If you can, try demoing a device at a store. That will give you a good sense of the interface and feel of each operating system.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle2"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle2">
+					<div class="howtotitle" >
 						2.Determine your price range
+					</div>
+					<div class="howtoimage">
+						<img src="https://i.ibb.co/LJtdcYG/simps.png"><br>
 					</div>
 					<p>
 						IOS phones (iPhones) are typically more expensive than their Android counterparts. Among phone manufacturers, Apple and Samsung are typically among the most expensive (with models ranging from $400-$700 retail), while HTC, LG, and Motorola tend to produce lower cost options (some low end smartphones can be acquired for under $100).<br>
@@ -93,9 +112,13 @@
 						Some carriers also charge a monthly ‘device fee’ to make up for little or no upfront cost on your smartphone.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle3"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle3">
+					<div class="howtotitle">
 						3.Determine which features suit your needs
+					</div>
+					<div class="howtoimage">
+						<img src="https://i.ibb.co/61zDkvP/sfsdfs.png"><br>
 					</div>
 					<p>
 						Each operating system has some proprietary features, while basic features like email, web browsing, and maps will be available on all systems.<br>
@@ -104,18 +127,26 @@
 						Windows Phone uses Cortana for voice activation, has “Live Tiles” homescreen customization, and incorporates Word, Excel, PowerPoint and PDF options.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle4"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle4">
+					<div class="howtotitle">
 						4.Pick a phone service and data plan that works for you
+					</div>
+					<div class="howtoimage">
+						<img src="https://selectra.info/sites/default/files/styles/global_guide/public/field/image/reseaux-mobile-3g-4g.png?itok=_YA2L5N6"><br>
 					</div>
 					<p>
 						Phone service carriers will usually offer a wide range of prepaid monthly plan options for phone minutes, texts, and data over the cellular network.<br>
 						You may be able to cut monthly costs by not purchasing a data plan at all, but this means you won't be able to access the internet from your phone if not on wifi.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle5"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle5">
+					<div class="howtotitle">
 						5.Pick a screen size
+					</div>
+					<div class="howtoimage">
+						<img src="https://u01.appmifile.com/images/2016/07/10/7d4028d4-c792-4d00-ba5e-c3c7f987cf4e.png"><br>
 					</div>
 					<p>
 						Screen size is measured corner to corner diagonally. Ultimately, screen size is a matter of preference. Smaller screen phones may fit better in your pocket and are often cheaper. Larger displays may be preferable if you plan to watch a lot of videos.<br>
@@ -124,9 +155,13 @@
 						Nokia offers Windows phone models ranging from 4-6 inch screens.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle6"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle6">
+					<div class="howtotitle">
 						6.Check the storage space
+					</div>
+					<div class="howtoimage">
+						<img src="https://i.ibb.co/jf8rpS6/sfsdfs.png"><br>
 					</div>
 					<p>
 						A phone's storage (usually listed in gigabytes or GB) is a measure of how many files (photos, videos, apps) it can store at any one time. Storage space strongly affects the price of the smartphone so consider how much you're likely to need before settling on a phone model.<br>
@@ -135,9 +170,13 @@
 						Some Android phones (but not all) support storage expansion with the purchase of a microSD card. iPhones do not support storage expansion after purchase.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle7"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle7">
+					<div class="howtotitle">
 						7.Consider camera quality
+					</div>
+					<div class="howtoimage">
+						<img src="http://www.foundshit.com/pictures/food/camera-cake.jpg"><br>
 					</div>
 					<p>
 						Although smartphones are known for taking high-quality photos in general, actual picture quality will vary quite a bit between brands and models. The best way to measure camera quality in a phone is to search for sample pictures online taken with that smartphone model or to demo the camera yourself.
@@ -147,9 +186,13 @@
 						The Lumia 1020 Windows Phone is designed specifically for heavy camera use.
 					</p>
 				</div>
+				<div class="mark" id="howtotitle8"></div>
 				<div class="howto">
-					<div class="howtotitle" id="howtotitle8">
+					<div class="howtotitle">
 							8.Consider phone battery life
+					</div>
+					<div class="howtoimage">
+						<img src="http://thumbpress.com/wp-content/uploads/2014/11/funny-battery-drained-red-alert1.jpg"><br>
 					</div>
 					<p>
 						Battery technology is improving steadily so newer phones tend to have longer battery life, however your usage habits are what really dictate how long the battery lasts. Talking on the phone, gaming, and using phones outside of wifi range will all drain a battery more quickly.<br>
