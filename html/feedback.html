@@ -11,11 +11,21 @@
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+		<script type="text/javascript">
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+  				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    				document.getElementById("navba").style.top = "0";
+  				} else {
+  	  				document.getElementById("navba").style.top = "80px";}}
+		</script>
 	</head>
 
 <body>
 	<div class="top">	
-
+		
 		<div class="text">
 			<h1>
 				<a href="../index.html">
@@ -39,15 +49,15 @@
     			</a>
     	</div>
 	</div>
-
-
-	<ul>
- 		<li><a class="Home" href="home.html">Home</a></li>
-		<li><a class="What" href="what.html">What is Skt.a ?</a></li>
-  		<li><a class="How_to" href="howto.html">How to choose a smartphone ?</a></li>
-  		<li><a class="About me" href="me.html">About me</a></li>
-  		<li><a class="Feedback" href="feedback.html">Feedback</a></li>
-	</ul>
+	<div id="navba">
+		<ul>
+	 		<li><a class="Home" href="home.html">Home</a></li>
+			<li><a class="What" href="what.html">What is Skt.a ?</a></li>
+	  		<li><a class="How_to" href="howto.html">How to choose a smartphone ?</a></li>
+	  		<li><a class="About me" href="me.html">About me</a></li>
+	  		<li><a class="Feedback" href="feedback.html">Feedback</a></li>
+		</ul>
+	</div>
 
 	<div class="form">
 		<h3> Feedback me! </h3>
