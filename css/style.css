@@ -11,7 +11,7 @@ body {
     font-weight: bold;
 	background-color : #9E1030;
 	font-family: 'Montserrat', sans-serif;
-	5px 5px 5px 5px;
+	border-radius: 5px 5px 5px 5px;
 	text-indent: 10px;
 	color: white;
     display: flex;	
@@ -43,7 +43,6 @@ span {
     font-family: 'Montserrat', sans-serif;
     width: 100%;
     position: absolute;
-    /*top: -50px;*/
 }
 
 
@@ -70,12 +69,32 @@ span {
 	padding: 5px;
 	border: 0;
 	margin-right: 1em;
+	padding-top: 20px;
 }
 
 
 /*----------------------------Howto Page-----------------------------------------*/
+/*#navba {
+    transition: 0.3s;
+    padding-bottom: : 15px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 18px;
+    background-color: #333;
+    overflow: hidden;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#navba a:hover {
+    background-color: #111;
+    color: black;
+    opacity: 0.5;
+}
+*/
+
 #middlenav  a {
-   	position: absolute;
    	position: fixed;
     left: -80px;
     transition: 0.3s;
@@ -95,8 +114,9 @@ span {
 }
 
 .howtodroite{
-	margin-left:80px;
+	margin-left:130px;
 	margin-top: 70px;
+	margin-right: 80px;
 }
 
 .howtotitle{
@@ -116,66 +136,95 @@ span {
 	border-radius: 5px 5px 5px 5px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1em;
-	margin-bottom: 50px;
+	/*margin-bottom: 20px;*/
 }
 
 
 .howtodroite p{
-	/*background-color: white;
-	color: black;
-	border-radius: 5px 5px 5px 5px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 1em;
-*/
+	padding-left: 20px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	line-height: 2.0;
+}
+#howtotitle1{
+	margin-bottom: 100px;
+}
+.mark{
+	margin-bottom: 60px;
 }
 
 .howtotext{
 	display: flex;
 }
 
+.howtodroite img{
+	style= height: 80%; 
+	width: 80%; 
+	margin-left: 10%;
+	margin-right: auto;
+	background-color: black;
+	margin-top: 10px;
+}
+
 #OS {
 	top: 160px;
-    background-color: #9E1030
+    background-color: #4169e1;
 }
 
 #Price {
 	top: 220px;
-    background-color: #9E1030
+    background-color: green;
 }
 
 #Need {
 	top: 280px;
-    background-color: #9E1030
+    background-color: red;
 }
 
 #Network {
 	top: 340px;
-    background-color: #9E1030
+    background-color: #8a2be2;
 }
 
 #Screen {
 	top: 400px;
-    background-color: #9E1030
+    background-color: #ffd700;
 }
 
 #Storage {
 	top: 460px;
-    background-color: #9E1030
+    background-color: #555;
 }
 
 #Camera {
 	top: 520px;
-    background-color: #555
+    background-color:#FE8914 ;
 }
 
 #Battery {
 	top: 580px;
-    background-color: #9E1030
+    background-color: black;
 }
 
 
 img {
 	border-radius: 18px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 17px;
+  z-index: 99;
+  /*font-size: 18px;*/
+  border: none;
+  outline: none;
+  /*background-color: red;
+  color: white;*/
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
 }
 
 /*----------------------------Home Page-----------------------------------------*/
